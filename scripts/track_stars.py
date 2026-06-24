@@ -91,7 +91,11 @@ class GitHubStarTracker:
         以 full_name 为 key 计算增长量。
         """
         if not previous_data:
-            return sorted(current_repos, key=lambda x: x.get("stargazers_count", 0), reverse=True)[:10]
+            top = sorted(current_repos, key=lambda x: x.get("stargazers_count", 0), reverse=True)[:10]
+            # ensure numeric growth field exists
+            for repo in top:
+                repo["star_growth"] = 0
+            return top
 
         previous_map = {r.get("full_name"): r for r in previous_data}
         repos_with_growth = []
@@ -113,7 +117,7 @@ class GitHubStarTracker:
         for idx, repo in enumerate(repos, 1):
             name = repo.get("full_name")
             stars = repo.get("stargazers_count", 0)
-            growth = repo.get("star_growth", "-")
+            growth = repo.get("star_growth", 0) or 0
             desc = (repo.get("description") or "").replace("\n", " ")[:80]
             url = repo.get("html_url")
             report += f"| {idx} | [{name}]({url}) | {stars:,} | {growth:,} | {desc} |\n"
