@@ -9,7 +9,7 @@ import os
 import re
 import smtplib
 import ssl
-from datetime import datetime
+from datetime import datetime, timezone
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from pathlib import Path
@@ -133,7 +133,7 @@ def parse_trending_html(html: str) -> list[dict]:
 # ── 报告生成 ──────────────────────────────────────────────
 
 def format_report(repos: list[dict], top_n: int = 10) -> tuple[str, list[dict]]:
-    now = datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d %H:%M:%S UTC")
+    now = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S UTC")
     top = repos[:top_n]
 
     md = f"# Star 增长最快的前十名仓库 (本周)\n\n"
@@ -167,11 +167,11 @@ def send_email(report_md: str, repos_top10: list[dict]) -> None:
         print("[WARN] SMTP_USER / SMTP_PASS not set, skipping email.")
         return
 
-    subject = f"每周 Star 增长排行 — {datetime.now(datetime.timezone.utc).strftime('%Y-%m-%d')}"
+    subject = f"每周 Star 增长排行 — {datetime.now(timezone.utc).strftime('%Y-%m-%d')}"
 
     # Build HTML body
     html_body = f"<h2>每周 Star 增长最快的前十名仓库</h2>\n"
-    html_body += f"<p>更新时间: {datetime.now(datetime.timezone.utc).strftime('%Y-%m-%d %H:%M:%S UTC')}</p>\n"
+    html_body += f"<p>更新时间: {datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M:%S UTC')}</p>\n"
     html_body += "<table border='1' cellpadding='5' cellspacing='0' style='border-collapse:collapse;font-family:sans-serif;'>\n"
     html_body += "<tr style='background:#f6f8fa;'><th>排名</th><th>仓库</th><th>本周增长</th><th>描述</th></tr>\n"
     for idx, repo in enumerate(repos_top10, 1):
@@ -226,7 +226,7 @@ def save_report(md_text: str, repos: list[dict]) -> None:
 
     reports_dir = Path("reports")
     reports_dir.mkdir(exist_ok=True)
-    now = datetime.now(datetime.timezone.utc)
+    now = datetime.now(timezone.utc)
     week_file = reports_dir / f"weekly_report_{now.strftime('%Y-W%U')}.md"
     with open(week_file, "w", encoding="utf-8") as f:
         f.write(md_text)
