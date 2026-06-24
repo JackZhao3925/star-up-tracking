@@ -12,186 +12,60 @@ import ssl
 from datetime import datetime
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
-from html.parser import HTMLParser
 from pathlib import Path
 
+import requests
+from bs4 import BeautifulSoup
 
-# ── HTML 解析器 ──────────────────────────────────────────────
 
-class TrendingArticleParser(HTMLParser):
-    """从 Trending 页面提取 <article> 标签中的仓库信息。"""
 
-    def __init__(self):
-        super().__init__()
-        self.repos = []
-        self._in_article = False
-        self._in_link = False
-        self._in_h2 = False
-        self._in_spn = False  # star count span
-        self._in_p = False    # description paragraph
-        self._buf = ""
-        self._repo_idx = 0
 
-    def handle_starttag(self, tag, attrs):
-        attr_dict = dict(attrs)
-        cls = attr_dict.get("class", "")
+# ── 翻译 ──────────────────────────────────────────────────────
 
-        if tag == "article" and "Box-row" in cls:
-            self._in_article = True
-            self._repo_idx += 1
-            self._buf = ""
-
-        if not self._in_article:
-            return
-
-        if tag == "h2":
-            self._in_h2 = True
-            self._buf = ""
-        elif tag == "a" and self._in_h2:
-            href = attr_dict.get("href", "")
-            if href:
-                self.repo_name = href.strip("/")
-            self._in_link = True
-            self._buf = ""
-
-        elif tag == "span" and "d-inline" in cls and "float-sm-right" in cls:
-            self._in_spn = True
-            self._buf = ""
-        elif tag == "p" and "col-9" in cls:
-            self._in_p = True
-            self._buf = ""
-
-    def handle_endtag(self, tag):
-        if not self._in_article:
-            return
-
-        if tag == "h2":
-            self._in_h2 = False
-        elif tag == "a" and self._in_link:
-            self._in_link = False
-        elif tag == "span":
-            self._in_spn = False
-        elif tag == "p":
-            self._in_p = False
-
-        if tag == "article" and self._in_article:
-            self._in_article = False
-            if hasattr(self, "repo_name"):
-                self.repos.append({
-                    "full_name": getattr(self, "repo_name", ""),
-                    "stars_this_week": getattr(self, "stars_week", "0"),
-                    "description": getattr(self, "desc", ""),
-                })
-
-    def handle_data(self, data):
-        if not self._in_article:
-            return
-        if self._in_link:
-            self._buf += data
-        elif self._in_spn:
-            self._buf += data
-        elif self._in_p:
-            self._buf += data
-
-        # Flush buffer when leaving the tag
-        if not (self._in_link or self._in_spn or self._in_p):
+def translate(text: str) -> str:
+    """将英文描述翻译成简体中文。
+    优先使用 OpenAI 翻译（需 OPENAI_API_KEY），
+    无 key 时用免费的 Google 翻译 API 兜底。
+    """
+    api_key = os.getenv("OPENAI_API_KEY")
+    if api_key:
+        try:
+            import importlib
+            openai_mod = importlib.import_module("openai")
+            OpenAI = getattr(openai_mod, "OpenAI")
+            client = OpenAI(api_key=api_key, base_url="https://api.openai.com/v1")
+            resp = client.chat.completions.create(
+                model="gpt-4o-mini",
+                messages=[
+                    {"role": "system", "content": "Translate the following English text to Simplified Chinese. Output ONLY the Chinese text, nothing else."},
+                    {"role": "user", "content": text[:200]},
+                ],
+                temperature=0.3,
+                timeout=10,
+            )
+            return resp.choices[0].message.content.strip()
+        except Exception:
             pass
 
-    # Override to flush on tag close
-    def handle_endtag_real(self, tag):
+    # 免费 Google 翻译 API 兜底
+    try:
+        import importlib
+        urllib = importlib.import_module("urllib.request")
+        url = f"https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=zh-CN&dt=t&q={requests.utils.quote(text[:200])}"
+        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+        with urllib.request.urlopen(req, timeout=5) as r:
+            result = __import__("json").loads(r.read().decode())
+            return "".join(s[0] for s in result[0] if s[0])
+    except Exception:
         pass
 
-    def _flush_buffers(self):
-        text = self._buf.strip()
-        if self._in_link is False and text:
-            pass
-        self._buf = ""
-
-
-class BetterTrendingParser(HTMLParser):
-    """更稳健的 Trending 解析器，逐标签收集数据。"""
-
-    def __init__(self):
-        super().__init__()
-        self.repos = []
-        self._in_article = False
-        self._repo = {}
-        # State tracking for buffered content
-        self._buffer = ""
-        self._buffer_target = None  # "name", "stars", "desc"
-
-    def handle_starttag(self, tag, attrs):
-        attr_dict = dict(attrs)
-        cls = attr_dict.get("class", "")
-
-        # Start of a repo article row
-        if tag == "article" and "Box-row" in cls:
-            self._in_article = True
-            self._repo = {}
-            self._buffer = ""
-            self._buffer_target = None
-
-        if not self._in_article:
-            return
-
-        # Repository link: <h2><a href="owner/repo">
-        if tag == "h2":
-            self._buffer_target = "name"
-            self._buffer = ""
-        elif tag == "a" and self._buffer_target == "name":
-            href = attr_dict.get("href", "")
-            if href:
-                self._repo["full_name"] = href.strip("/")
-
-        # Star count: <span class="d-inline ... float-sm-right">
-        elif tag == "svg" and self._buffer_target == "name":
-            # Skip SVG icon inside h2
-            pass
-        elif tag == "span" and "float-sm-right" in cls:
-            self._buffer_target = "stars"
-            self._buffer = ""
-
-        # Description: <p class="col-9 ...
-        elif tag == "p" and "col-9" in cls:
-            self._buffer_target = "desc"
-            self._buffer = ""
-
-    def handle_endtag(self, tag):
-        if not self._in_article:
-            return
-
-        if tag == "h2" and self._buffer_target == "name":
-            self._buffer_target = None
-        elif tag == "span" and self._buffer_target == "stars":
-            stars_text = self._buffer.strip()
-            self._repo["stars_this_week"] = stars_text
-            self._buffer_target = None
-        elif tag == "p" and self._buffer_target == "desc":
-            desc_text = self._buffer.strip()
-            # Strip HTML entities
-            desc_text = desc_text.replace("&amp;", "&").replace("&lt;", "<").replace("&gt;", ">")
-            desc_text = re.sub(r"&#[0-9]+;", "", desc_text)
-            self._repo["description"] = desc_text
-            self._buffer_target = None
-
-        if tag == "article" and self._in_article:
-            self._in_article = False
-            if "full_name" in self._repo:
-                self.repos.append(self._repo)
-
-    def handle_data(self, data):
-        if not self._in_article or not self._buffer_target:
-            return
-        if self._buffer_target == "stars":
-            # Star count looks like "1,234 stars this week" or "1,234 star this week"
-            self._buffer += data
-        elif self._buffer_target in ("name", "desc"):
-            self._buffer += data
+    # 最终兜底：返回原文
+    return text
 
 
 # ── HTTP 请求 ──────────────────────────────────────────────
 
-def fetch_trending_page(max_retries=3):
+def fetch_trending_page(max_retries: int = 3) -> str | None:
     """Fetch the GitHub Trending weekly page."""
     url = "https://github.com/trending?since=weekly"
     headers = {
@@ -199,8 +73,6 @@ def fetch_trending_page(max_retries=3):
         "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
         "Accept-Language": "en-US,en;q=0.9",
     }
-
-    import requests
 
     for attempt in range(1, max_retries + 1):
         try:
@@ -210,22 +82,58 @@ def fetch_trending_page(max_retries=3):
         except requests.exceptions.RequestException as e:
             print(f"[WARN] Fetch failed (attempt {attempt}/{max_retries}): {e}")
             if attempt < max_retries:
-                import time
-                time.sleep(2 ** attempt)
+                time_sleep(2 ** attempt)
     return None
 
 
-def parse_trending_html(html):
-    """Parse HTML and return list of repo dicts."""
-    parser = BetterTrendingParser()
-    parser.feed(html)
-    return parser.repos
+def time_sleep(seconds: float) -> None:
+    """Import time.sleep lazily to avoid top-level import in type hints."""
+    import time
+    time.sleep(seconds)
+
+
+def parse_trending_html(html: str) -> list[dict]:
+    """Parse GitHub Trending HTML and return list of repo dicts."""
+    soup = BeautifulSoup(html, "html.parser")
+    articles = soup.select("article.Box-row")
+    repos = []
+
+    for article in articles:
+        # Repo name: <h2><a href="owner/repo">
+        h2_link = article.select_one("h2 a")
+        if not h2_link:
+            continue
+        name = h2_link.get_text(strip=True)
+        # Clean up extra spaces in name (e.g. "calesthio /OpenMontage" → "calesthio/OpenMontage")
+        name = re.sub(r"\s+", "", name).strip("/")
+        # Ensure owner/repo format
+        if "/" not in name:
+            continue
+
+        # Star count: <span class="float-sm-right">
+        span = article.select_one("span.float-sm-right")
+        stars_raw = span.get_text(strip=True) if span else "?"
+        # Parse "9,410 stars this week" → "9,410"
+        stars_clean = re.sub(r"(?i)\s*stars?\s*this\s*week\s*", "", stars_raw).strip()
+
+        # Description: <p class="col-9">
+        p = article.select_one("p.col-9")
+        desc = p.get_text(strip=True) if p else ""
+
+        repos.append({
+            "full_name": name,
+            "stars_this_week": stars_clean,
+            "stars_raw": stars_raw,
+            "description": desc,
+        })
+
+    return repos
 
 
 # ── 报告生成 ──────────────────────────────────────────────
 
-def format_report(repos, top_n=10):
-    now = datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S UTC")
+def format_report(repos: list[dict], top_n: int = 10) -> tuple[str, list[dict]]:
+    now = datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d %H:%M:%S UTC")
     top = repos[:top_n]
 
     md = f"# Star 增长最快的前十名仓库 (本周)\n\n"
@@ -236,7 +144,9 @@ def format_report(repos, top_n=10):
     for idx, repo in enumerate(top, 1):
         name = repo.get("full_name", "?")
         stars = repo.get("stars_this_week", "?")
-        desc = (repo.get("description") or "").replace("|", "\\|")[:120]
+        en_desc = repo.get("description") or ""
+        zh_desc = translate(en_desc)
+        desc = f"{en_desc} / {zh_desc}".replace("|", "\\|")[:120]
         url = f"https://github.com/{name}"
         md += f"| {idx} | [{name}]({url}) | {stars} | {desc} |\n"
 
@@ -245,7 +155,7 @@ def format_report(repos, top_n=10):
 
 # ── 邮件发送 ──────────────────────────────────────────────
 
-def send_email(report_md, repos_top10):
+def send_email(report_md: str, repos_top10: list[dict]) -> None:
     """Send report via SMTP."""
     smtp_host = os.getenv("SMTP_HOST", "smtp.163.com")
     smtp_port = int(os.getenv("SMTP_PORT", "465"))
@@ -257,40 +167,58 @@ def send_email(report_md, repos_top10):
         print("[WARN] SMTP_USER / SMTP_PASS not set, skipping email.")
         return
 
-    subject = f"每周 Star 增长排行 — {datetime.utcnow().strftime('%Y-%m-%d')}"
+    subject = f"每周 Star 增长排行 — {datetime.now(datetime.timezone.utc).strftime('%Y-%m-%d')}"
 
-    # Build HTML body from markdown table
+    # Build HTML body
     html_body = f"<h2>每周 Star 增长最快的前十名仓库</h2>\n"
-    html_body += f"<p>更新时间: {datetime.utcnow().strftime('%Y-%m-%d %H:%M:%S UTC')}</p>\n"
-    html_body += "<table border='1' cellpadding='5' cellspacing='0' style='border-collapse:collapse;'>\n"
-    html_body += "<tr><th>排名</th><th>仓库</th><th>本周增长</th><th>描述</th></tr>\n"
+    html_body += f"<p>更新时间: {datetime.now(datetime.timezone.utc).strftime('%Y-%m-%d %H:%M:%S UTC')}</p>\n"
+    html_body += "<table border='1' cellpadding='5' cellspacing='0' style='border-collapse:collapse;font-family:sans-serif;'>\n"
+    html_body += "<tr style='background:#f6f8fa;'><th>排名</th><th>仓库</th><th>本周增长</th><th>描述</th></tr>\n"
     for idx, repo in enumerate(repos_top10, 1):
         name = repo.get("full_name", "?")
         stars = repo.get("stars_this_week", "?")
-        desc = (repo.get("description") or "")[:150]
-        html_body += f"<tr><td>{idx}</td><td><a href='https://github.com/{name}'>{name}</a></td><td>{stars}</td><td>{desc}</td></tr>\n"
+        en_desc = repo.get("description") or ""
+        zh_desc = translate(en_desc)
+        desc = f"{en_desc} / {zh_desc}"[:200]
+        html_body += (
+            f"<tr><td>{idx}</td>"
+            f"<td><a href='https://github.com/{name}'>{name}</a></td>"
+            f"<td>{stars}</td>"
+            f"<td>{desc}</td></tr>\n"
+        )
     html_body += "</table>\n"
 
     msg = MIMEMultipart("alternative")
     msg["Subject"] = subject
     msg["From"] = smtp_user
     msg["To"] = recipient
-    msg.attach(MIMEText(report_md, "plain", "utf-8"))
-    msg.attach(MIMEText(html_body, "html", "utf-8"))
+
+    # Alternative: plain + html
+    alt = MIMEMultipart("alternative")
+    alt.attach(MIMEText(report_md, "plain", "utf-8"))
+    alt.attach(MIMEText(html_body, "html", "utf-8"))
+    msg.attach(alt)
 
     context = ssl.create_default_context()
     try:
         with smtplib.SMTP_SSL(smtp_host, smtp_port, context=context) as server:
             server.login(smtp_user, smtp_pass)
-            server.send_message(msg)
+            server.sendmail(smtp_user, recipient, msg.as_string())
         print(f"[+] 邮件已发送至 {recipient}")
+    except smtplib.SMTPAuthenticationError as e:
+        print(f"[ERROR] SMTP 认证失败: {e}")
+        print("      请检查 SMTP_USER 和 SMTP_PASS（授权码）是否正确")
+    except smtplib.SMTPRecipientsRefused as e:
+        print(f"[ERROR] 收件人被拒绝: {e}")
+    except smtplib.SMTPException as e:
+        print(f"[ERROR] SMTP 错误: {e}")
     except Exception as e:
         print(f"[ERROR] 邮件发送失败: {e}")
 
 
-# ── 主流程 ──────────────────────────────────────────────
+# ── 保存报告 ──────────────────────────────────────────────
 
-def save_report(md_text, repos):
+def save_report(md_text: str, repos: list[dict]) -> None:
     docs_dir = Path("docs")
     docs_dir.mkdir(exist_ok=True)
     with open(docs_dir / "index.md", "w", encoding="utf-8") as f:
@@ -298,7 +226,7 @@ def save_report(md_text, repos):
 
     reports_dir = Path("reports")
     reports_dir.mkdir(exist_ok=True)
-    now = datetime.utcnow()
+    now = datetime.now(datetime.timezone.utc)
     week_file = reports_dir / f"weekly_report_{now.strftime('%Y-W%U')}.md"
     with open(week_file, "w", encoding="utf-8") as f:
         f.write(md_text)
@@ -314,7 +242,9 @@ def save_report(md_text, repos):
     print(f"[+] 数据已保存到 {data_file}")
 
 
-def run():
+# ── 主流程 ──────────────────────────────────────────────
+
+def run() -> None:
     print("[*] 正在抓取 GitHub Trending (weekly)...")
     html = fetch_trending_page()
     if not html:
