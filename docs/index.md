@@ -1,16 +1,16 @@
-# Star 增长最快的前十名 (近 7 天)
+# Star 增长最快的前十名仓库 (本周)
 
-**更新时间**: 2026-06-24 15:23:07 UTC
+**更新时间**: 2026-06-24 21:24:53 UTC
 
-| 排名 | 仓库名称 | 总 Star | 本周增长 | 描述 |
-|------|---------|--------|---------|------|
-| 1 | [sindresorhus/awesome](https://github.com/sindresorhus/awesome) | 478,454 | 0 | 😎 Awesome lists about all kinds of interesting topics |
-| 2 | [freeCodeCamp/freeCodeCamp](https://github.com/freeCodeCamp/freeCodeCamp) | 450,426 | 0 | freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, |
-| 3 | [public-apis/public-apis](https://github.com/public-apis/public-apis) | 443,962 | 0 | A collective list of free APIs |
-| 4 | [EbookFoundation/free-programming-books](https://github.com/EbookFoundation/free-programming-books) | 390,732 | 0 | :books: Freely available programming books |
-| 5 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | 380,263 | 0 | Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞  |
-| 6 | [nilbuild/developer-roadmap](https://github.com/nilbuild/developer-roadmap) | 358,155 | 0 | Interactive roadmaps, guides and other educational content to help developers gr |
-| 7 | [vinta/awesome-python](https://github.com/vinta/awesome-python) | 304,614 | 0 | An opinionated list of Python frameworks, libraries, tools, and resources |
-| 8 | [awesome-selfhosted/awesome-selfhosted](https://github.com/awesome-selfhosted/awesome-selfhosted) | 300,921 | 0 | A list of Free Software network services and web applications which can be hoste |
-| 9 | [react/react](https://github.com/react/react) | 246,090 | 0 | The library for web and native user interfaces. |
-| 10 | [obra/superpowers](https://github.com/obra/superpowers) | 237,584 | 0 | An agentic skills framework & software development methodology that works. |
+| 排名 | 仓库名称 | 本周 Star 增长 | 描述 |
+|------|---------|-------------|------|
+| 1 | [calesthio/OpenMontage](https://github.com/calesthio/OpenMontage) | 9,410 stars this week | World's first open-source, agentic video production system. 12 pipelines, 52 tools, 500+ agent skills. Turn your AI codi |
+| 2 | [DeusData/codebase-memory-mcp](https://github.com/DeusData/codebase-memory-mcp) | 8,536 stars this week | High-performance code intelligence MCP server. Indexes codebases into a persistent knowledge graph — average repo in mil |
+| 3 | [google-research/timesfm](https://github.com/google-research/timesfm) | 4,376 stars this week | TimesFM (Time Series Foundation Model) is a pretrained time-series foundation model developed by Google Research for tim |
+| 4 | [n0-computer/iroh](https://github.com/n0-computer/iroh) | 1,531 stars this week | IP addresses break, dial keys instead. Modular networking stack in Rust. |
+| 5 | [koala73/worldmonitor](https://github.com/koala73/worldmonitor) | 2,309 stars this week | Real-time global intelligence dashboard. AI-powered news aggregation, geopolitical monitoring, and infrastructure tracki |
+| 6 | [asgeirtj/system_prompts_leaks](https://github.com/asgeirtj/system_prompts_leaks) | 2,681 stars this week | Extracted system prompts from Anthropic - Claude Fable 5, Opus 4.8, Claude Code, Claude Design. OpenAI - ChatGPT 5.5 Thi |
+| 7 | [Panniantong/Agent-Reach](https://github.com/Panniantong/Agent-Reach) | 6,915 stars this week | Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongSh |
+| 8 | [penpot/penpot](https://github.com/penpot/penpot) | 3,423 stars this week | Penpot: The open-source design tool for design and code collaboration |
+| 9 | [withastro/flue](https://github.com/withastro/flue) | 1,489 stars this week | The sandbox agent framework. |
+| 10 | [jamiepine/voicebox](https://github.com/jamiepine/voicebox) | 2,883 stars this week | The open-source AI voice studio. Clone, dictate, create. |
