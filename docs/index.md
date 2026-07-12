@@ -1,16 +1,16 @@
 # Star 增长最快的前十名仓库 (本周)
 
-**更新时间**: 2026-07-05 10:23:06 UTC
+**更新时间**: 2026-07-12 09:57:16 UTC
 
 | 排名 | 仓库名称 | 本周 Star 增长 | 描述 |
 |------|---------|-------------|------|
-| 1 | [usestrix/strix](https://github.com/usestrix/strix) | 9,362 | Open-source AI penetration testing tool to find and fix your app’s vulnerabilities. / Open-source AI penetration testing |
-| 2 | [xbtlin/ai-berkshire](https://github.com/xbtlin/ai-berkshire) | 5,984 | AI 时代的伯克希尔：基于 Claude Code / Codex 的价值投资研究框架。巴菲特·芒格·段永平·李录四大师方法论 + 多Agent并行研究。\| AI-era Berkshire: a value investing rese |
-| 3 | [simplex-chat/simplex-chat](https://github.com/simplex-chat/simplex-chat) | 4,630 | SimpleX - the first messaging network operating without user identifiers of any kind - 100% private by design! iOS, Andr |
-| 4 | [Robbyant/lingbot-map](https://github.com/Robbyant/lingbot-map) | 2,065 | A feed-forward 3D foundation model for reconstructing scenes from streaming data / A feed-forward 3D foundation model fo |
-| 5 | [diegosouzapw/OmniRoute](https://github.com/diegosouzapw/OmniRoute) | 4,133 | Never stop coding. Free AI gateway: one endpoint, 231+ providers (50+ free), connect Claude Code, Codex, Cursor, Cline & |
-| 6 | [DeusData/codebase-memory-mcp](https://github.com/DeusData/codebase-memory-mcp) | 9,517 | High-performance code intelligence MCP server. Indexes codebases into a persistent knowledge graph — average repo in mil |
-| 7 | [ogulcancelik/herdr](https://github.com/ogulcancelik/herdr) | 3,506 | agent multiplexer that lives in your terminal. / agent multiplexer that lives in your terminal. |
-| 8 | [logto-io/logto](https://github.com/logto-io/logto) | 1,488 | 🧑‍🚀 Authentication and authorization infrastructure for SaaS and AI apps, built on OIDC and OAuth 2.1 with multi-tenancy |
-| 9 | [Starmel/OpenSuperWhisper](https://github.com/Starmel/OpenSuperWhisper) | 499 | macOS dictation app / macOS dictation app |
-| 10 | [browser-use/video-use](https://github.com/browser-use/video-use) | 4,174 | Edit videos with coding agents / Edit videos with coding agents |
+| 1 | [Zackriya-Solutions/meetily](https://github.com/Zackriya-Solutions/meetily) | 8,579 | Privacy first, AI meeting assistant with 4x faster Parakeet/Whisper live transcription, speaker diarization, and Ollama  |
+| 2 | [openai/codex-plugin-cc](https://github.com/openai/codex-plugin-cc) | 4,030 | Use Codex from Claude Code to review code or delegate tasks. / Use Codex from Claude Code to review code or delegate tas |
+| 3 | [wonderwhy-er/DesktopCommanderMCP](https://github.com/wonderwhy-er/DesktopCommanderMCP) | 1,451 | This is MCP server for Claude that gives it terminal control, file system search and diff file editing capabilities / Th |
+| 4 | [asgeirtj/system_prompts_leaks](https://github.com/asgeirtj/system_prompts_leaks) | 7,731 | Extracted system prompts from Anthropic - Claude Fable 5, Opus 4.8, Claude Code, Claude Design. OpenAI - ChatGPT GPT-5.6 |
+| 5 | [ogulcancelik/herdr](https://github.com/ogulcancelik/herdr) | 4,349 | agent multiplexer that lives in your terminal. / agent multiplexer that lives in your terminal. |
+| 6 | [TencentCloud/CubeSandbox](https://github.com/TencentCloud/CubeSandbox) | 2,416 | Instant, Concurrent, Secure & Lightweight Sandbox for AI Agents. / Instant, Concurrent, Secure & Lightweight Sandbox for |
+| 7 | [facebook/astryx](https://github.com/facebook/astryx) | 2,779 | An open source design system that's fully customizable and agent ready / An open source design system that's fully custo |
+| 8 | [usestrix/strix](https://github.com/usestrix/strix) | 4,987 | Open-source AI penetration testing tool to find and fix your app’s vulnerabilities. / Open-source AI penetration testing |
+| 9 | [bradautomates/claude-video](https://github.com/bradautomates/claude-video) | 4,399 | Give Claude the ability to watch any video. /watch downloads, extracts frames, transcribes, hands it all to Claude. / Gi |
+| 10 | [diegosouzapw/OmniRoute](https://github.com/diegosouzapw/OmniRoute) | 4,375 | Never stop coding. Free AI gateway: one endpoint, 231+ providers (50+ free), connect Claude Code, Codex, Cursor, Cline & |
