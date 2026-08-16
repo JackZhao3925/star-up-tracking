@@ -1,16 +1,16 @@
 # Star 增长最快的前十名仓库 (本周)
 
-**更新时间**: 2026-08-09 08:51:51 UTC
+**更新时间**: 2026-08-16 08:36:39 UTC
 
 | 排名 | 仓库名称 | 本周 Star 增长 | 描述 |
 |------|---------|-------------|------|
-| 1 | [zhaoxuya520/reverse-skill](https://github.com/zhaoxuya520/reverse-skill) | 9,635 | Reverse Engineering / Authorized Penetration Testing / Security Research Skill Router Pack AI-powered routing + On-deman |
-| 2 | [TencentCloud/TencentDB-Agent-Memory](https://github.com/TencentCloud/TencentDB-Agent-Memory) | 8,046 | TencentDB Agent Memory is a team-level memory hub for AI Agents — turning conversations, docs, and code into four reusab |
-| 3 | [lyogavin/airllm](https://github.com/lyogavin/airllm) | 5,711 | AirLLM 70B inference with single 4GB GPU / AirLLM 70B inference with single 4GB GPU |
-| 4 | [microsoft/AI-For-Beginners](https://github.com/microsoft/AI-For-Beginners) | 7,469 | 12 Weeks, 24 Lessons, AI for All! / 12 Weeks, 24 Lessons, AI for All! |
-| 5 | [esengine/DeepSeek-Reasonix](https://github.com/esengine/DeepSeek-Reasonix) | 4,704 | DeepSeek-native AI coding agent for your terminal. Engineered around prefix-cache stability — leave it running. / DeepSe |
-| 6 | [usekaneo/kaneo](https://github.com/usekaneo/kaneo) | 2,259 | 🎯 All you need. Nothing you don't. Open source project management that works for you, not against you. / 🎯 All you need. |
-| 7 | [virgiliojr94/book-to-skill](https://github.com/virgiliojr94/book-to-skill) | 4,071 | Turn any technical book PDF into a Claude Code skill — ready to study, reference, and use while you work. / Turn any tec |
-| 8 | [iv-org/invidious](https://github.com/iv-org/invidious) | 997 | Invidious is an alternative front-end to YouTube / Invidious is an alternative front-end to YouTube |
-| 9 | [different-ai/openwork](https://github.com/different-ai/openwork) | 1,834 | The open-source alternative to Claude Cowork (powered by opencode) / The open-source alternative to Claude Cowork (power |
-| 10 | [unclebob/swarm-forge](https://github.com/unclebob/swarm-forge) | 504 | A simple tool for coordinating several AI agents. / A simple tool for coordinating several AI agents. |
+| 1 | [cathrynlavery/diagram-design](https://github.com/cathrynlavery/diagram-design) | 14,735 | 29 editorial diagram types for Claude Code. Self-contained HTML + SVG. No shadows, no Mermaid-slop. / 29 editorial diagr |
+| 2 | [semantica-agi/semantica](https://github.com/semantica-agi/semantica) | 5,339 | Graph-Native Infrastructure for Context and Accountable AI Systems / Graph-Native Infrastructure for Context and Account |
+| 3 | [PrimeIntellect-ai/prime-agent](https://github.com/PrimeIntellect-ai/prime-agent) | 8,488 | A self-improving RLM agent for coding workflows and long-running autonomous tasks. / A self-improving RLM agent for codi |
+| 4 | [megadose/holehe](https://github.com/megadose/holehe) | 1,059 | holehe allows you to check if the mail is used on different sites like twitter, instagram and will retrieve information  |
+| 5 | [NVIDIA-NeMo/Switchyard](https://github.com/NVIDIA-NeMo/Switchyard) | 1,326 | Switchyard lets LLM applications route traffic across models and providers while preserving native OpenAI and Anthropic  |
+| 6 | [vitali87/code-graph-rag](https://github.com/vitali87/code-graph-rag) | 1,756 | The ultimate RAG for your monorepo. Query, understand, and edit multi-language codebases with the power of AI and knowle |
+| 7 | [cactus-compute/needle](https://github.com/cactus-compute/needle) | 2,488 | 14MB foundation model for tiny devices; phones, wearables, smart home, and robots. / 14MB foundation model for tiny devi |
+| 8 | [macro-inc/macro](https://github.com/macro-inc/macro) | 2,434 | Macro is a unified workspace for teams: email, chat, docs, tasks, agents, calls, and CRM — @-linked together with shared |
+| 9 | [ToolJet/ToolJet](https://github.com/ToolJet/ToolJet) | 1,047 | ToolJet is the open-source foundation of ToolJet AI - the enterprise app generation platform for building internal tools |
+| 10 | [TencentCloud/TencentDB-Agent-Memory](https://github.com/TencentCloud/TencentDB-Agent-Memory) | 3,956 | TencentDB Agent Memory is a team-level memory hub for AI Agents — turning conversations, docs, and code into four reusab |
