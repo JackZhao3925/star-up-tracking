@@ -1,16 +1,16 @@
 # Star 增长最快的前十名仓库 (本周)
 
-**更新时间**: 2026-08-16 08:36:39 UTC
+**更新时间**: 2026-08-23 08:37:12 UTC
 
 | 排名 | 仓库名称 | 本周 Star 增长 | 描述 |
 |------|---------|-------------|------|
-| 1 | [cathrynlavery/diagram-design](https://github.com/cathrynlavery/diagram-design) | 14,735 | 29 editorial diagram types for Claude Code. Self-contained HTML + SVG. No shadows, no Mermaid-slop. / 29 editorial diagr |
-| 2 | [semantica-agi/semantica](https://github.com/semantica-agi/semantica) | 5,339 | Graph-Native Infrastructure for Context and Accountable AI Systems / Graph-Native Infrastructure for Context and Account |
-| 3 | [PrimeIntellect-ai/prime-agent](https://github.com/PrimeIntellect-ai/prime-agent) | 8,488 | A self-improving RLM agent for coding workflows and long-running autonomous tasks. / A self-improving RLM agent for codi |
-| 4 | [megadose/holehe](https://github.com/megadose/holehe) | 1,059 | holehe allows you to check if the mail is used on different sites like twitter, instagram and will retrieve information  |
-| 5 | [NVIDIA-NeMo/Switchyard](https://github.com/NVIDIA-NeMo/Switchyard) | 1,326 | Switchyard lets LLM applications route traffic across models and providers while preserving native OpenAI and Anthropic  |
-| 6 | [vitali87/code-graph-rag](https://github.com/vitali87/code-graph-rag) | 1,756 | The ultimate RAG for your monorepo. Query, understand, and edit multi-language codebases with the power of AI and knowle |
-| 7 | [cactus-compute/needle](https://github.com/cactus-compute/needle) | 2,488 | 14MB foundation model for tiny devices; phones, wearables, smart home, and robots. / 14MB foundation model for tiny devi |
-| 8 | [macro-inc/macro](https://github.com/macro-inc/macro) | 2,434 | Macro is a unified workspace for teams: email, chat, docs, tasks, agents, calls, and CRM — @-linked together with shared |
-| 9 | [ToolJet/ToolJet](https://github.com/ToolJet/ToolJet) | 1,047 | ToolJet is the open-source foundation of ToolJet AI - the enterprise app generation platform for building internal tools |
-| 10 | [TencentCloud/TencentDB-Agent-Memory](https://github.com/TencentCloud/TencentDB-Agent-Memory) | 3,956 | TencentDB Agent Memory is a team-level memory hub for AI Agents — turning conversations, docs, and code into four reusab |
+| 1 | [cursor/plugins](https://github.com/cursor/plugins) | 1,693 | Cursor plugin specification and official plugins / Cursor plugin specification and official plugins |
+| 2 | [cordiverse/cordis](https://github.com/cordiverse/cordis) | 3,364 | Meta-Framework of Spatiotemporal Composability / Meta-Framework of Spatiotemporal Composability |
+| 3 | [volcengine/OpenViking](https://github.com/volcengine/OpenViking) | 3,447 | Self-evolving Context Database for AI Agents. Unify Agent Memory, Knowledge RAG and Skills. / Self-evolving Context Data |
+| 4 | [basecamp/omarchy](https://github.com/basecamp/omarchy) | 3,151 | Beautiful, Modern & Opinionated Linux / Beautiful, Modern & Opinionated Linux |
+| 5 | [modular/modular](https://github.com/modular/modular) | 2,017 | The Modular Platform (includes MAX & Mojo) / The Modular Platform (includes MAX & Mojo) |
+| 6 | [harry0703/MoneyPrinterTurbo](https://github.com/harry0703/MoneyPrinterTurbo) | 10,953 | 利用 AI 大模型和自动化工作流，根据主题或关键词一键生成高清短视频。Generate HD short videos from a topic or keyword with an automated AI workflow. / 利用  |
+| 7 | [AprilNEA/OpenLogi](https://github.com/AprilNEA/OpenLogi) | 4,993 | ⚡️A native, local-first alternative to Logitech Options+, written in Rust 🦀 — remap buttons, DPI, and SmartShift over HI |
+| 8 | [public-apis/public-apis](https://github.com/public-apis/public-apis) | 9,381 | A collective list of free APIs / A collective list of free APIs |
+| 9 | [cathrynlavery/diagram-design](https://github.com/cathrynlavery/diagram-design) | 7,368 | 38 editorial diagram types for Claude Code, Codex, and Pi. Self-contained HTML + SVG. No shadows. No Mermaid slop. / 38  |
+| 10 | [akitaonrails/ai-memory](https://github.com/akitaonrails/ai-memory) | 2,575 | Solution for long term memory for agent coding CLIs and to facilitate handoff between different agent vendors / Solution |
