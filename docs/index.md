@@ -1,16 +1,16 @@
 # Star 增长最快的前十名仓库 (本周)
 
-**更新时间**: 2026-08-23 08:37:12 UTC
+**更新时间**: 2026-08-30 13:43:32 UTC
 
 | 排名 | 仓库名称 | 本周 Star 增长 | 描述 |
 |------|---------|-------------|------|
-| 1 | [cursor/plugins](https://github.com/cursor/plugins) | 1,693 | Cursor plugin specification and official plugins / Cursor plugin specification and official plugins |
-| 2 | [cordiverse/cordis](https://github.com/cordiverse/cordis) | 3,364 | Meta-Framework of Spatiotemporal Composability / Meta-Framework of Spatiotemporal Composability |
-| 3 | [volcengine/OpenViking](https://github.com/volcengine/OpenViking) | 3,447 | Self-evolving Context Database for AI Agents. Unify Agent Memory, Knowledge RAG and Skills. / Self-evolving Context Data |
-| 4 | [basecamp/omarchy](https://github.com/basecamp/omarchy) | 3,151 | Beautiful, Modern & Opinionated Linux / Beautiful, Modern & Opinionated Linux |
-| 5 | [modular/modular](https://github.com/modular/modular) | 2,017 | The Modular Platform (includes MAX & Mojo) / The Modular Platform (includes MAX & Mojo) |
-| 6 | [harry0703/MoneyPrinterTurbo](https://github.com/harry0703/MoneyPrinterTurbo) | 10,953 | 利用 AI 大模型和自动化工作流，根据主题或关键词一键生成高清短视频。Generate HD short videos from a topic or keyword with an automated AI workflow. / 利用  |
-| 7 | [AprilNEA/OpenLogi](https://github.com/AprilNEA/OpenLogi) | 4,993 | ⚡️A native, local-first alternative to Logitech Options+, written in Rust 🦀 — remap buttons, DPI, and SmartShift over HI |
-| 8 | [public-apis/public-apis](https://github.com/public-apis/public-apis) | 9,381 | A collective list of free APIs / A collective list of free APIs |
-| 9 | [cathrynlavery/diagram-design](https://github.com/cathrynlavery/diagram-design) | 7,368 | 38 editorial diagram types for Claude Code, Codex, and Pi. Self-contained HTML + SVG. No shadows. No Mermaid slop. / 38  |
-| 10 | [akitaonrails/ai-memory](https://github.com/akitaonrails/ai-memory) | 2,575 | Solution for long term memory for agent coding CLIs and to facilitate handoff between different agent vendors / Solution |
+| 1 | [freestylefly/awesome-gpt-image-2](https://github.com/freestylefly/awesome-gpt-image-2) | 13,141 | Prompt as Code \| GPT-Image2 工业级提示词引擎与模板库，530+ 个案例逆向工程，20+ 套工业级模板，并提炼出Skills，持续更新中 / Prompt as Code \| GPT-Image2 工业级提示词 |
+| 2 | [anthropics/claude-plugins-community](https://github.com/anthropics/claude-plugins-community) | 2,234 | Community plugin marketplace for Claude Cowork and Claude Code. Read-only mirror — submit plugins at clau.de/plugin-dire |
+| 3 | [tt-a1i/archify](https://github.com/tt-a1i/archify) | 14,875 | Agent skill for beautiful, verifiable architecture, workflow, sequence, data-flow, and lifecycle diagrams—self-contained |
+| 4 | [omacom/omarchy](https://github.com/omacom/omarchy) | 6,475 | Beautiful, Modern & Opinionated Linux / Beautiful, Modern & Opinionated Linux |
+| 5 | [apache/maka](https://github.com/apache/maka) | 1,876 | Apache Maka (Incubating) is a local-first AI agent workspace. Model messages, tool calls, tool results, permission decis |
+| 6 | [tashfeenahmed/freellmapi](https://github.com/tashfeenahmed/freellmapi) | 2,691 | 7.4 billion tokens per month. 34 free LLM providers. 635 free model endpoints. All behind one /v1 endpoint, plus any cus |
+| 7 | [MadsLorentzen/ai-job-search](https://github.com/MadsLorentzen/ai-job-search) | 5,145 | The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor C |
+| 8 | [anthropics/claude-plugins-official](https://github.com/anthropics/claude-plugins-official) | 1,603 | Official, Anthropic-managed directory of high quality Claude Code Plugins. / Official, Anthropic-managed directory of hi |
+| 9 | [AprilNEA/OpenLogi](https://github.com/AprilNEA/OpenLogi) | 4,114 | ⚡️A native, local-first alternative to Logitech Options+, written in Rust 🦀 — remap buttons, DPI, and SmartShift over HI |
+| 10 | [rohitg00/ai-engineering-from-scratch](https://github.com/rohitg00/ai-engineering-from-scratch) | 3,488 | Learn it. Build it. Ship it for others. / Learn it. Build it. Ship it for others. |
