@@ -1,16 +1,16 @@
 # Star 增长最快的前十名仓库 (本周)
 
-**更新时间**: 2026-09-20 12:58:50 UTC
+**更新时间**: 2026-09-27 13:46:35 UTC
 
 | 排名 | 仓库名称 | 本周 Star 增长 | 描述 |
 |------|---------|-------------|------|
-| 1 | [alibaba/open-code-review](https://github.com/alibaba/open-code-review) | 15,028 | Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines |
-| 2 | [anthropics/claude-code](https://github.com/anthropics/claude-code) | 1,999 | Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster  |
-| 3 | [affaan-m/ECC](https://github.com/affaan-m/ECC) | 6,265 | The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development f |
-| 4 | [Tencent/WeKnora](https://github.com/Tencent/WeKnora) | 4,867 | Open-source LLM knowledge platform: turn raw documents into a queryable RAG, an autonomous reasoning agent, and a self-m |
-| 5 | [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) | 3,445 | Production-grade engineering skills for AI coding agents. / Production-grade engineering skills for AI coding agents. |
-| 6 | [anthropics/knowledge-work-plugins](https://github.com/anthropics/knowledge-work-plugins) | 1,034 | Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork / Open source reposit |
-| 7 | [bilawalsidhu/gods-eye-view](https://github.com/bilawalsidhu/gods-eye-view) | 10,207 | A spy satellite simulator in your browser, except the data is real. Live open source spatial intelligence on a photoreal |
-| 8 | [mksglu/context-mode](https://github.com/mksglu/context-mode) | 1,359 | Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and en |
-| 9 | [max-sixty/worktrunk](https://github.com/max-sixty/worktrunk) | 1,141 | Worktrunk is a CLI for Git worktree management, designed for parallel AI agent workflows / Worktrunk is a CLI for Git wo |
-| 10 | [home-assistant/core](https://github.com/home-assistant/core) | 417 | 🏡 Open source home automation that puts local control and privacy first. / 🏡 Open source home automation that puts local |
+| 1 | [anthropics/financial-services](https://github.com/anthropics/financial-services) | 2,633 |  /  |
+| 2 | [paperclipai/paperclip](https://github.com/paperclipai/paperclip) | 5,376 | The open-source app everyone uses to manage agents at work / The open-source app everyone uses to manage agents at work |
+| 3 | [vectorize-io/hindsight](https://github.com/vectorize-io/hindsight) | 7,282 | Hindsight: Agent Memory That Learns / Hindsight: Agent Memory That Learns |
+| 4 | [cloudflare/security-audit-skill](https://github.com/cloudflare/security-audit-skill) | 6,474 | A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings / A coding-a |
+| 5 | [Tencent/WeKnora](https://github.com/Tencent/WeKnora) | 3,015 | Open-source LLM knowledge platform: turn raw documents into a queryable RAG, an autonomous reasoning agent, and a self-m |
+| 6 | [davila7/claude-code-templates](https://github.com/davila7/claude-code-templates) | 1,142 | CLI tool for configuring and monitoring Claude Code / CLI tool for configuring and monitoring Claude Code |
+| 7 | [stablyai/orca](https://github.com/stablyai/orca) | 6,503 | Orca is the ADE for working with a fleet of parallel agents. Run any coding agent with your own subscription. Available  |
+| 8 | [vercel/next.js](https://github.com/vercel/next.js) | 280 | The React Framework / The React Framework |
+| 9 | [HKUDS/CLI-Anything](https://github.com/HKUDS/CLI-Anything) | 1,055 | "CLI-Anything: Making ALL Software Agent-Native" -- CLI-Hub:https://clianything.cc/ / "CLI-Anything: Making ALL Software |
+| 10 | [pytorch/pytorch](https://github.com/pytorch/pytorch) | 295 | Tensors and Dynamic neural networks in Python with strong GPU acceleration / Tensors and Dynamic neural networks in Pyth |
