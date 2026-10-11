@@ -1,16 +1,16 @@
 # Star 增长最快的前十名仓库 (本周)
 
-**更新时间**: 2026-10-04 13:51:51 UTC
+**更新时间**: 2026-10-11 14:50:00 UTC
 
 | 排名 | 仓库名称 | 本周 Star 增长 | 描述 |
 |------|---------|-------------|------|
-| 1 | [paperclipai/paperclip](https://github.com/paperclipai/paperclip) | 10,722 | The open-source app everyone uses to manage agents at work / The open-source app everyone uses to manage agents at work |
-| 2 | [vectorize-io/hindsight](https://github.com/vectorize-io/hindsight) | 14,507 | Hindsight: Agent Memory That Learns / Hindsight: Agent Memory That Learns |
-| 3 | [pbakaus/impeccable](https://github.com/pbakaus/impeccable) | 3,311 | The design language that makes your AI harness better at design. / The design language that makes your AI harness better |
-| 4 | [debpalash/VoiceStudio](https://github.com/debpalash/VoiceStudio) | 16,775 | VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictati |
-| 5 | [heygen-com/hyperframes](https://github.com/heygen-com/hyperframes) | 3,011 | Write HTML. Render video. Built for agents. / Write HTML. Render video. Built for agents. |
-| 6 | [Effect-TS/effect](https://github.com/Effect-TS/effect) | 466 | Build production-ready applications in TypeScript / Build production-ready applications in TypeScript |
-| 7 | [rohitg00/ai-engineering-from-scratch](https://github.com/rohitg00/ai-engineering-from-scratch) | 5,059 | Learn it. Build it. Ship it for others. / Learn it. Build it. Ship it for others. |
-| 8 | [Panniantong/Agent-Reach](https://github.com/Panniantong/Agent-Reach) | 3,952 | Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongSh |
-| 9 | [alirezarezvani/claude-skills](https://github.com/alirezarezvani/claude-skills) | 948 | 380 Claude Code skills & agent skills & plugins (30+ Agents, 70+ custom commands, 380+ skills, customizable references,  |
-| 10 | [pingdotgg/t3code](https://github.com/pingdotgg/t3code) | 975 |  /  |
+| 1 | [boykopovar/AnyPS5](https://github.com/boykopovar/AnyPS5) | 21,365 | Tool for automatic PS5 executables porting to Linux and Windows / Tool for automatic PS5 executables porting to Linux an |
+| 2 | [tester-army/e2e](https://github.com/tester-army/e2e) | 6,564 | Next generation e2e testing framework for web and mobile apps. / Next generation e2e testing framework for web and mobil |
+| 3 | [mattpocock/skills](https://github.com/mattpocock/skills) | 9,179 | Skills for Real Engineers. Straight from my .agents directory. / Skills for Real Engineers. Straight from my .agents dir |
+| 4 | [thedotmack/claude-mem](https://github.com/thedotmack/claude-mem) | 4,035 | Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it  |
+| 5 | [EpicGames/raddebugger](https://github.com/EpicGames/raddebugger) | 740 | A native, user-mode, multi-process, graphical debugger. / A native, user-mode, multi-process, graphical debugger. |
+| 6 | [heygen-com/hyperframes](https://github.com/heygen-com/hyperframes) | 4,081 | Write HTML. Render video. Built for agents. / Write HTML. Render video. Built for agents. |
+| 7 | [cursor/plugins](https://github.com/cursor/plugins) | 1,110 | Cursor plugin specification and official plugins / Cursor plugin specification and official plugins |
+| 8 | [flutter/flutter](https://github.com/flutter/flutter) | 263 | Flutter makes it easy and fast to build beautiful apps for mobile and beyond / Flutter makes it easy and fast to build b |
+| 9 | [earthtojake/text-to-cad](https://github.com/earthtojake/text-to-cad) | 2,369 | Give your agent CAD superpowers. / Give your agent CAD superpowers. |
+| 10 | [mvschwarz/openrig](https://github.com/mvschwarz/openrig) | 2,068 | Build your own network of agents from Claude Code, Codex and Pi: persistent teams with roles, shared context and owned w |
