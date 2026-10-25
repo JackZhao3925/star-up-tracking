@@ -1,16 +1,16 @@
 # Star 增长最快的前十名仓库 (本周)
 
-**更新时间**: 2026-10-18 12:32:39 UTC
+**更新时间**: 2026-10-25 13:06:47 UTC
 
 | 排名 | 仓库名称 | 本周 Star 增长 | 描述 |
 |------|---------|-------------|------|
-| 1 | [morluto/rea](https://github.com/morluto/rea) | 239,923 | Reverse engineer anything with agents, from app behavior down to native binaries. / Reverse engineer anything with agent |
-| 2 | [storytold/artcraft](https://github.com/storytold/artcraft) | 18,479 | ArtCraft is an intentional crafting engine for artists, designers, and filmmakers / ArtCraft is an intentional crafting  |
-| 3 | [boykopovar/AnyPS5](https://github.com/boykopovar/AnyPS5) | 16,250 | Tool for automatic PS5 executables porting to Linux and Windows / Tool for automatic PS5 executables porting to Linux an |
-| 4 | [anthropics/claude-plugins-official](https://github.com/anthropics/claude-plugins-official) | 3,581 | Official, Anthropic-managed directory of high quality Claude Code Plugins. / Official, Anthropic-managed directory of hi |
-| 5 | [mksglu/context-mode](https://github.com/mksglu/context-mode) | 4,438 | Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and en |
-| 6 | [cathrynlavery/diagram-design](https://github.com/cathrynlavery/diagram-design) | 8,382 | Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, and Pi. 44 diagram types. Self-c |
-| 7 | [NationalSecurityAgency/ghidra](https://github.com/NationalSecurityAgency/ghidra) | 7,608 | Ghidra is a software reverse engineering (SRE) framework / Ghidra is a software reverse engineering (SRE) framework |
-| 8 | [heygen-com/hyperframes](https://github.com/heygen-com/hyperframes) | 5,639 | Write HTML. Render video. Built for agents. / Write HTML. Render video. Built for agents. |
-| 9 | [cursor/plugins](https://github.com/cursor/plugins) | 1,536 | Cursor plugin specification and official plugins / Cursor plugin specification and official plugins |
-| 10 | [MadsLorentzen/ai-job-search](https://github.com/MadsLorentzen/ai-job-search) | 4,200 | The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor C |
+| 1 | [cloudflare/security-audit-skill](https://github.com/cloudflare/security-audit-skill) | 12,680 | A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings / A coding-a |
+| 2 | [ruvnet/ruflo](https://github.com/ruvnet/ruflo) | 3,241 | 🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build convers |
+| 3 | [anthropics/knowledge-work-plugins](https://github.com/anthropics/knowledge-work-plugins) | 2,631 | Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork / Open source reposit |
+| 4 | [anomalyco/opencode](https://github.com/anomalyco/opencode) | 6,857 | The open source coding agent. / The open source coding agent. |
+| 5 | [stablyai/orca](https://github.com/stablyai/orca) | 9,828 | Orca is the place for working with a fleet of agents (e.g. Grok Bot, Claude Code). Run any coding agent with your own su |
+| 6 | [heygen-com/hyperframes](https://github.com/heygen-com/hyperframes) | 5,633 | Write HTML. Render video. Built for agents. / Write HTML. Render video. Built for agents. |
+| 7 | [android/skills](https://github.com/android/skills) | 1,317 |  /  |
+| 8 | [Graphify-Labs/graphify](https://github.com/Graphify-Labs/graphify) | 6,868 | Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill fo |
+| 9 | [akitaonrails/ai-memory](https://github.com/akitaonrails/ai-memory) | 3,541 | Solution for long term memory for agent coding CLIs and to facilitate handoff between different agent vendors / Solution |
+| 10 | [Comfy-Org/ComfyUI](https://github.com/Comfy-Org/ComfyUI) | 4,648 | The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface. The fastest local infer |
