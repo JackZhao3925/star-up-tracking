@@ -1,16 +1,16 @@
 # Star 增长最快的前十名仓库 (本周)
 
-**更新时间**: 2026-10-25 13:06:47 UTC
+**更新时间**: 2026-11-01 14:53:35 UTC
 
 | 排名 | 仓库名称 | 本周 Star 增长 | 描述 |
 |------|---------|-------------|------|
-| 1 | [cloudflare/security-audit-skill](https://github.com/cloudflare/security-audit-skill) | 12,680 | A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings / A coding-a |
-| 2 | [ruvnet/ruflo](https://github.com/ruvnet/ruflo) | 3,241 | 🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build convers |
-| 3 | [anthropics/knowledge-work-plugins](https://github.com/anthropics/knowledge-work-plugins) | 2,631 | Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork / Open source reposit |
-| 4 | [anomalyco/opencode](https://github.com/anomalyco/opencode) | 6,857 | The open source coding agent. / The open source coding agent. |
-| 5 | [stablyai/orca](https://github.com/stablyai/orca) | 9,828 | Orca is the place for working with a fleet of agents (e.g. Grok Bot, Claude Code). Run any coding agent with your own su |
-| 6 | [heygen-com/hyperframes](https://github.com/heygen-com/hyperframes) | 5,633 | Write HTML. Render video. Built for agents. / Write HTML. Render video. Built for agents. |
-| 7 | [android/skills](https://github.com/android/skills) | 1,317 |  /  |
-| 8 | [Graphify-Labs/graphify](https://github.com/Graphify-Labs/graphify) | 6,868 | Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill fo |
-| 9 | [akitaonrails/ai-memory](https://github.com/akitaonrails/ai-memory) | 3,541 | Solution for long term memory for agent coding CLIs and to facilitate handoff between different agent vendors / Solution |
-| 10 | [Comfy-Org/ComfyUI](https://github.com/Comfy-Org/ComfyUI) | 4,648 | The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface. The fastest local infer |
+| 1 | [Nutlope/hallmark](https://github.com/Nutlope/hallmark) | 12,062 | Anti-AI-slop design skill for Claude Code, Cursor, and Codex. / Anti-AI-slop design skill for Claude Code, Cursor, and C |
+| 2 | [pbakaus/impeccable](https://github.com/pbakaus/impeccable) | 12,031 | The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, catch AI slop |
+| 3 | [AgriciDaniel/claude-seo](https://github.com/AgriciDaniel/claude-seo) | 4,814 | Universal SEO skill for Claude Code. 26 sub-skills + 19 sub-agents covering technical SEO, E-E-A-T, schema, GEO/AEO, age |
+| 4 | [thedotmack/claude-mem](https://github.com/thedotmack/claude-mem) | 4,575 | Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it  |
+| 5 | [cloudflare/security-audit-skill](https://github.com/cloudflare/security-audit-skill) | 11,908 | A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings / A coding-a |
+| 6 | [obra/superpowers](https://github.com/obra/superpowers) | 5,636 | An agentic skills framework & software development methodology that works. / An agentic skills framework & software deve |
+| 7 | [JetBrains/thinkrail](https://github.com/JetBrains/thinkrail) | 5,738 | Vibe code with pi in a lightweight, real IDE that customises itself around the way you work — The Vibe You Need / Vibe c |
+| 8 | [pingdotgg/t3code](https://github.com/pingdotgg/t3code) | 3,718 |  /  |
+| 9 | [multica-ai/andrej-karpathy-skills](https://github.com/multica-ai/andrej-karpathy-skills) | 4,277 | A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfa |
+| 10 | [jakubkrehel/skills](https://github.com/jakubkrehel/skills) | 1,272 | A collection of agent skills that help you build great interfaces. / A collection of agent skills that help you build gr |
