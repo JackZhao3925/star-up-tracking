@@ -1,16 +1,16 @@
 # Star 增长最快的前十名仓库 (本周)
 
-**更新时间**: 2026-11-01 14:53:35 UTC
+**更新时间**: 2026-11-08 14:55:57 UTC
 
 | 排名 | 仓库名称 | 本周 Star 增长 | 描述 |
 |------|---------|-------------|------|
-| 1 | [Nutlope/hallmark](https://github.com/Nutlope/hallmark) | 12,062 | Anti-AI-slop design skill for Claude Code, Cursor, and Codex. / Anti-AI-slop design skill for Claude Code, Cursor, and C |
-| 2 | [pbakaus/impeccable](https://github.com/pbakaus/impeccable) | 12,031 | The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, catch AI slop |
-| 3 | [AgriciDaniel/claude-seo](https://github.com/AgriciDaniel/claude-seo) | 4,814 | Universal SEO skill for Claude Code. 26 sub-skills + 19 sub-agents covering technical SEO, E-E-A-T, schema, GEO/AEO, age |
-| 4 | [thedotmack/claude-mem](https://github.com/thedotmack/claude-mem) | 4,575 | Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it  |
-| 5 | [cloudflare/security-audit-skill](https://github.com/cloudflare/security-audit-skill) | 11,908 | A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings / A coding-a |
-| 6 | [obra/superpowers](https://github.com/obra/superpowers) | 5,636 | An agentic skills framework & software development methodology that works. / An agentic skills framework & software deve |
-| 7 | [JetBrains/thinkrail](https://github.com/JetBrains/thinkrail) | 5,738 | Vibe code with pi in a lightweight, real IDE that customises itself around the way you work — The Vibe You Need / Vibe c |
-| 8 | [pingdotgg/t3code](https://github.com/pingdotgg/t3code) | 3,718 |  /  |
-| 9 | [multica-ai/andrej-karpathy-skills](https://github.com/multica-ai/andrej-karpathy-skills) | 4,277 | A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfa |
-| 10 | [jakubkrehel/skills](https://github.com/jakubkrehel/skills) | 1,272 | A collection of agent skills that help you build great interfaces. / A collection of agent skills that help you build gr |
+| 1 | [NVIDIA/auto-ontology](https://github.com/NVIDIA/auto-ontology) | 9,044 | Auto Ontology is a Python framework for building semantic, graph-based reasoning layers over data. It enables determinis |
+| 2 | [thedotmack/claude-mem](https://github.com/thedotmack/claude-mem) | 7,482 | Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it  |
+| 3 | [max-sixty/worktrunk](https://github.com/max-sixty/worktrunk) | 2,292 | Worktrunk is a CLI for Git worktree management, designed for parallel AI agent workflows / Worktrunk is a CLI for Git wo |
+| 4 | [anthropics/skills](https://github.com/anthropics/skills) | 2,796 | Public repository for Agent Skills / Public repository for Agent Skills |
+| 5 | [Donchitos/Claude-Code-Game-Studios](https://github.com/Donchitos/Claude-Code-Game-Studios) | 5,719 | Turn Claude Code into a full game dev studio — 49 AI agents, 72 workflow skills, and a complete coordination system mirr |
+| 6 | [milind-soni/OpenMausBot](https://github.com/milind-soni/OpenMausBot) | 7,077 | Open-source Grok Bot alternative with a virtual machine that bots can use / Open-source Grok Bot alternative with a virt |
+| 7 | [pingdotgg/t3code](https://github.com/pingdotgg/t3code) | 17,100 |  /  |
+| 8 | [Nutlope/hallmark](https://github.com/Nutlope/hallmark) | 6,624 | Anti-AI-slop design skill for Claude Code, Cursor, and Codex. / Anti-AI-slop design skill for Claude Code, Cursor, and C |
+| 9 | [Renhuai123/ziwei-doushu](https://github.com/Renhuai123/ziwei-doushu) | 4,906 | 紫微斗数开源排盘引擎 — 基于倪海厦《天纪》体系，含完整排盘算法、四化系统、格局知识库、古籍原文数据 / 紫微斗数开源排盘引擎 — 基于倪海厦《天纪》体系，含完整排盘算法、四化系统、格局知识库、古籍原文数据 |
+| 10 | [D4Vinci/Scrapling](https://github.com/D4Vinci/Scrapling) | 8,712 | 🕷️ The BEST Web Scraping framework that handles everything from a single request to a full-scale crawl! Don't be shy, jo |
