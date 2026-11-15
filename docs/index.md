@@ -1,16 +1,16 @@
 # Star 增长最快的前十名仓库 (本周)
 
-**更新时间**: 2026-11-08 14:55:57 UTC
+**更新时间**: 2026-11-15 15:31:57 UTC
 
 | 排名 | 仓库名称 | 本周 Star 增长 | 描述 |
 |------|---------|-------------|------|
-| 1 | [NVIDIA/auto-ontology](https://github.com/NVIDIA/auto-ontology) | 9,044 | Auto Ontology is a Python framework for building semantic, graph-based reasoning layers over data. It enables determinis |
-| 2 | [thedotmack/claude-mem](https://github.com/thedotmack/claude-mem) | 7,482 | Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it  |
-| 3 | [max-sixty/worktrunk](https://github.com/max-sixty/worktrunk) | 2,292 | Worktrunk is a CLI for Git worktree management, designed for parallel AI agent workflows / Worktrunk is a CLI for Git wo |
-| 4 | [anthropics/skills](https://github.com/anthropics/skills) | 2,796 | Public repository for Agent Skills / Public repository for Agent Skills |
-| 5 | [Donchitos/Claude-Code-Game-Studios](https://github.com/Donchitos/Claude-Code-Game-Studios) | 5,719 | Turn Claude Code into a full game dev studio — 49 AI agents, 72 workflow skills, and a complete coordination system mirr |
-| 6 | [milind-soni/OpenMausBot](https://github.com/milind-soni/OpenMausBot) | 7,077 | Open-source Grok Bot alternative with a virtual machine that bots can use / Open-source Grok Bot alternative with a virt |
-| 7 | [pingdotgg/t3code](https://github.com/pingdotgg/t3code) | 17,100 |  /  |
-| 8 | [Nutlope/hallmark](https://github.com/Nutlope/hallmark) | 6,624 | Anti-AI-slop design skill for Claude Code, Cursor, and Codex. / Anti-AI-slop design skill for Claude Code, Cursor, and C |
-| 9 | [Renhuai123/ziwei-doushu](https://github.com/Renhuai123/ziwei-doushu) | 4,906 | 紫微斗数开源排盘引擎 — 基于倪海厦《天纪》体系，含完整排盘算法、四化系统、格局知识库、古籍原文数据 / 紫微斗数开源排盘引擎 — 基于倪海厦《天纪》体系，含完整排盘算法、四化系统、格局知识库、古籍原文数据 |
-| 10 | [D4Vinci/Scrapling](https://github.com/D4Vinci/Scrapling) | 8,712 | 🕷️ The BEST Web Scraping framework that handles everything from a single request to a full-scale crawl! Don't be shy, jo |
+| 1 | [meta/astryx](https://github.com/meta/astryx) | 13,660 | An open source design system that's fully customizable and agent ready / An open source design system that's fully custo |
+| 2 | [anthropics/skills](https://github.com/anthropics/skills) | 6,220 | Public repository for Agent Skills / Public repository for Agent Skills |
+| 3 | [sherlock-project/sherlock](https://github.com/sherlock-project/sherlock) | 12,401 | Hunt down social media accounts by username across social networks / Hunt down social media accounts by username across  |
+| 4 | [backnotprop/plannotator](https://github.com/backnotprop/plannotator) | 818 | The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, an |
+| 5 | [vercel-labs/agent-browser](https://github.com/vercel-labs/agent-browser) | 4,601 | Browser automation CLI for AI agents / Browser automation CLI for AI agents |
+| 6 | [ZhuLinsen/daily_stock_analysis](https://github.com/ZhuLinsen/daily_stock_analysis) | 4,526 | LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。 LLM-powered multi-market stock analysis system with multi-source marke |
+| 7 | [we-promise/sure](https://github.com/we-promise/sure) | 4,483 | The personal finance app for everyone (by everyone) / The personal finance app for everyone (by everyone) |
+| 8 | [milind-soni/OpenMausBot](https://github.com/milind-soni/OpenMausBot) | 6,413 | Open-source Grok Bot alternative with a virtual machine that bots can use / Open-source Grok Bot alternative with a virt |
+| 9 | [google/elephant-goldfish-model](https://github.com/google/elephant-goldfish-model) | 5,539 | Open-source plugin for designing and reviewing software with agents / Open-source plugin for designing and reviewing sof |
+| 10 | [google-deepmind/mujoco](https://github.com/google-deepmind/mujoco) | 1,859 | Multi-Joint dynamics with Contact. A general purpose physics simulator. / Multi-Joint dynamics with Contact. A general p |
